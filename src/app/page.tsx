@@ -75,7 +75,7 @@ export default function Home() {
                             }}
                             className="text-3xl font-bold text-neutral-100"
                         >
-                            AISA Chatbot
+                            Tripbot (Summer 2026)
                         </motion.div>
                     </motion.div>
                 ) : null}
@@ -90,8 +90,7 @@ export default function Home() {
                 <div className="mb-4 flex-1 space-y-4 overflow-y-auto">
                     {messages.length === 0 ? (
                         <div className="rounded-lg border border-dashed border-neutral-700 p-4 text-sm text-neutral-400">
-                            Ask anything about the Artificial Intelligence
-                            Student Association.
+                            Ask anything about your upcoming Summer 2026 trip.
                         </div>
                     ) : (
                         <AnimatePresence initial={false}>
@@ -109,7 +108,7 @@ export default function Home() {
                                     <div className="mb-1 text-sm font-semibold text-neutral-300">
                                         {message.role === "user"
                                             ? "You"
-                                            : "AISA"}
+                                            : "Dawg"}
                                     </div>
 
                                     <div className="whitespace-pre-wrap">
@@ -151,7 +150,7 @@ export default function Home() {
                     <input
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
-                        placeholder="Ask about AISA..."
+                        placeholder="Ask about the trip..."
                         disabled={isLoading}
                         className="min-w-0 flex-1 rounded-2xl border border-neutral-700 bg-neutral-800 px-4 py-3 text-neutral-200 placeholder:text-neutral-500 outline-none focus:border-neutral-500 focus:ring-2 focus:ring-neutral-500/20 disabled:bg-neutral-900 disabled:text-neutral-500"
                     />
